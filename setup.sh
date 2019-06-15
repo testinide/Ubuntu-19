@@ -20,7 +20,7 @@ sudo adduser $USER brother
 #ppa
 sudo add-apt-repository ppa:lutris-team/lutris 
 sudo apt-add-repository ppa:dolphin-emu/ppa
- sudo add-apt-repository ppa:pcsx2-team/pcsx2-daily
+sudo add-apt-repository ppa:pcsx2-team/pcsx2-daily
 
 # update stuff
 sudo apt-get update 
