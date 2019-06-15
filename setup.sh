@@ -21,6 +21,7 @@ sudo adduser $USER brother
 sudo add-apt-repository ppa:lutris-team/lutris 
 sudo apt-add-repository ppa:dolphin-emu/ppa
 sudo add-apt-repository ppa:pcsx2-team/pcsx2-daily
+udo add-apt-repository ppa:obsproject/obs-studio
 
 # update stuff
 sudo apt-get update 
@@ -42,13 +43,14 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 sudo apt-get remove ubuntu-web-launchers thunderbird rhythmbox -y
 
 ## Multimedia
-sudo apt-get install -y gimp  kdeconnect
+sudo apt-get install -y gimp && kdeconnect
 
 ## Games
 sudo apt-get install -y steam-installer
 sudo apt-get install -y lutris
 sudo apt-get install -y dolphin-emu-master
 sudo apt-get install -y pcsx2 unstable
+sudo apt-get install obs-studio
 ## Disable Apport
 sudo sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 
