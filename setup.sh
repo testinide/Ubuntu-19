@@ -16,9 +16,15 @@ gnome-tweak-tool qt5-style-plugins spell synaptic -yy
 # Add me to any groups I might need to be a part of:
 
 sudo adduser $USER brother
+
 #ppa
 sudo add-apt-repository ppa:lutris-team/lutris 
-sudo apt-add-repository ppa:dolphin-emu/ppa -yy
+sudo apt-add-repository ppa:dolphin-emu/ppa
+ sudo add-apt-repository ppa:pcsx2-team/pcsx2-daily
+
+# update stuff
+sudo apt-get update 
+
 # Remove undesirable packages:
 
 sudo apt purge gstreamer1.0-fluendo-mp3 deja-dup shotwell -yy
@@ -41,7 +47,8 @@ sudo apt-get install -y gimp
 ## Games
 sudo apt-get install -y steam-installer
 sudo apt-get install -y lutris
-sudo apt get install -y dolphin-emu-master
+sudo apt-get install -y dolphin-emu-master
+sudo apt-get install -y pcsx2 unstable
 ## Disable Apport
 sudo sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 
