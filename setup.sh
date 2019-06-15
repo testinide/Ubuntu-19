@@ -42,7 +42,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 sudo apt-get remove ubuntu-web-launchers thunderbird rhythmbox -y
 
 ## Multimedia
-sudo apt-get install -y gimp
+sudo apt-get install -y gimp  kdeconnect
 
 ## Games
 sudo apt-get install -y steam-installer
