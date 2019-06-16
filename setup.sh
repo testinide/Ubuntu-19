@@ -13,7 +13,7 @@ openssh-server sshfs gedit-plugin-text-size simplescreenrecorder nano \
 ubuntu-restricted-extras mpv vlc gthumb gnome-tweaks tracker chrome-gnome-shell \
 gnome-tweak-tool qt5-style-plugins spell synaptic -yy
 
-# Add me to any groups I might need to be a part of:
+# users
 
 sudo adduser $USER other user
 
@@ -24,6 +24,7 @@ sudo add-apt-repository ppa:pcsx2-team/pcsx2-daily
 udo add-apt-repository ppa:obsproject/obs-studio
 sudo add-apt-repository ppa:audacity-team/daily
 sudo add-apt-repository ppa:canonical-chromium-builds/stage
+
 # update stuff
 sudo apt-get update 
 
@@ -54,6 +55,7 @@ sudo apt-get install -y lutris
 sudo apt-get install -y dolphin-emu-master
 sudo apt-get install -y pcsx2 unstable
 sudo apt install chromium-browser
+
 ## Disable Apport
 sudo sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 
